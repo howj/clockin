@@ -1,0 +1,122 @@
+Day 11: Conflict introduced!
+
+//OFFICE STILL with just you, and Leo's garbage
+
+//Player's thoughts
+[   ["Looks like Leo is late to work, and there's plenty of his leftover garbage from yesterday",
+    "That guy is kind of a lost cause...",
+    "So long as he doesn't get me fired, I don't mind too much.",
+    "I should probably get to work",
+    "What's this? An email from 'REDACTED'?"],
+    
+    [?2I probably shouldn't open it, but..."],
+    
+    ["Let's see, it reads: 'The company you are working for is not as it seems.",
+    "BusinessCorp has been linked to several illicit financial schemes.",
+    "We will be contacting you via this machine this afternoon.",
+    "Do not miss us, or you will regret it. This is information you need to hear.'",
+    "Whoa, I wonder what this could mean...",
+    "I better make sure I'm on my computer this afternoon."],
+    
+    ["Probably better that I don't read that.",
+    "It's probably just some scam, or an accident.",
+    "Either way, I'm not too worried about it.",
+    "Well, here goes another work day!"]    ]
+    
+//Player reactions
+[   ["Open the email.",
+    "Delete the email."]
+    
+/*Returning interactables
+    Work at your desk
+    Sabrina at her desk
+    Howard at his desk
+    Women's bathroom
+    Men's bathroom
+    Closet
+    Coffee */
+    
+    
+    
+//During the afternoon, player interacts with unknown person no matter what
+
+
+
+
+//if they read the email
+//Player thoughts upon reaching Afternoon
+"It's the afternoon. Let's see what that person has to say at your computer."
+
+//upon interacting with computer
+"A messaging program appears on your screen. You have never seen it before.",
+"You can't close it. It looks like all you can do on your computer is type to respond."
+//Name should read REDACTED
+
+[   ["You showed up. Good."],
+
+
+
+
+//if they didn't read the email
+//Player thoughts upon reaching Afternoon
+"Someone just texted you. The message is from 'REDACTED'",
+"It reads: 'Go to your computer now. We need to speak to you.",
+"What could this mean? You better go to your computer
+
+//upon interacting with computer
+"A messaging program appears on your screen. You have never seen it before.",
+"You can't close it. It looks like all you can do on your computer is type to respond."
+//Name should read REDACTED
+//Should appear as a blurry silhouette or something
+
+[   ["The company you are working for is not as it seems.",
+    "BusinessCorp has been linked to several illicit financial schemes."]
+
+
+//this point below appears for both options
+   
+    ["?2Now pay attention to what I am about to say."],
+    ["If I wanted you to know, then you would know."],
+    ["Good."],
+    
+    ["You have been selected for a very important purpose.",
+    "BusinessCorp is a fraudulent lie. Surely you have noticed."]
+    
+    ["?2What exactly is it that you do?"]
+    ["Listen to yourself. What does that mean?",
+    "You've been fed a stream of meaningless buzzwords."],
+    ["Exactly. There doesn't exist any public record describing the nature of BusinessCorp's work.",
+    "All that exists is thousands and thousands of files discussing 'business'"],
+    
+    ["?3Listen, for now we need you to lay low. Don't arouse suspicion."
+    ["Good."],
+    ["You don't have to. Just do what we say."],
+    [".....",
+    "No. No we are not.",
+    "Don't read your boss's emails anymore.",
+    "It's... too risky."]
+    
+    ["Do not arouse suspicion. And whatever you do...",
+    "Don't get fired."],
+   
+    //Silhouette should disappear now
+    ["Your computer has returned to normal. Their is no evidence of this person's interference.",
+    "This is crazy... I better act normal and go home for now."
+    
+//Player responses
+[   ["Who are you? What's going on?",
+    "I'm listening."],
+    
+    ["Business.",
+    "I don't know"],
+    
+    //This might be difficult, I want the third option to only display if the player interacted
+    //with the laptop in the conference room.
+    
+    ["Okay, I will.",
+    "I'm not sure I trust you.",
+    "Are you extorting money from Roy? I read his emails."] ]
+
+
+
+

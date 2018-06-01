@@ -1,0 +1,28 @@
+//These should be in the morning when you failed a puzzle the night before and are now late
+
+
+
+//if lives > 5, now one less
+[   ["Hey PLAYER, we missed you at our meeting here this morning.",
+    "Don't worry too much though, your attendance is otherwise stellar!",
+    "See you shortly!"] ]
+    
+//if lives were 4, but now 3
+[   ["Hello PLAYER, did you forget that you had work today?",
+    "I'm not too worried at the moment, but try not to make a habit out of this.",
+    "See you shortly!"] ]
+    
+//if lives were 3, but now 2
+[   ["Hello PLAYER, you didn't show up today. You realize this, yes?",
+    "This is becoming habitual and I am worried. Don't let it happen again.",
+    "See you shortly. Preferrably now."]    ]
+    
+//if lives were 2, but now 1
+[   ["Where the hell are you? This is becoming ridiculous.",
+    "If you are late one more time, so help me I will fire you.",
+    "Get here NOW."]    ]
+    
+//if lives were 1, but now 0
+[   ["This is the final straw. Our business is concluded.",
+    "You are fired."]   ]
+//GAME OVER SCREEN

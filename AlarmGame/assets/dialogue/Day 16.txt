@@ -1,0 +1,15 @@
+//Day 16: Endings!
+
+//TO DO: Write details for decision-making interactions as well as text for epilogues.
+
+//Sabrina Ending
+//You tell the truth, Roy goes down, you are questioned thoroughly but not convicted
+
+//Howard Ending
+//You extort Roy, you walk away super rich, live lavishly for a couple years, then go to prison
+
+//Leo Ending
+//You delete everything, walk away, and make a sandcastle with Leo and Rufus
+
+//Roy Ending
+//You refuse to side with anyone, push Roy out of a window, and take over his schemes.

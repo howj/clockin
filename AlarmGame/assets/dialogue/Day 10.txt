@@ -1,0 +1,60 @@
+Day 10: Unstructured free day
+
+//OFFICE STILL With Leo
+
+//if they helped Leo
+[   ["+L1 Hey buddy! Great to see ya this fine morning!"],
+
+    ["?2Rufus is in the storage closet, if ya wanna go give him a snuggle!"],
+    ["+L2 I know right!? He's my best friend!",
+    "To be honest, I think he is the only person that really understands me.",
+    "Well... \"person\""],
+    ["-L2 Hey come on now! He is adorable!",
+    "Well, even if you don't like him, he loves you! He loves everyone!"],
+    
+    ["Make sure to scratch behind his ears if you go pet him! He loves that!"]  ]
+    
+//player responses
+[   ["Awesome! Rufus is so cute!",
+    "I don't like your dog."]   ]
+    
+    
+//if they told Roy the truth
+[   ["Oh, hey douchecanoe. You here to ruin another dog's life?",
+    "Listen, we gotta work together so I'm gonna try and find it in my heart to forgive you",
+    "But Rufus is at home right now suffering alone.",
+    "And that's on you.",
+    "Whatever. Let's work. Business business. Blah blah blah."] ]
+    
+//Player's thoughts
+[   ["Looks like Roy sent me a message on BusinessChat",
+    "It reads: 'Thanks again for helping me get rid of that stinky, stupid dog.",
+    "Keep an eye on Leo for me. We'll be keeping him on a short leash.",
+    "Get it? Leash. Dogs. Short leash.",
+    "I hope you are laughing. If not... well then you don't know good comedy.'"]  ]
+    
+    
+    
+//FREEDOM to walk around
+
+/*Returning interactables
+    Work at your desk
+    Sabrina at her desk
+    Howard at his desk
+    Women's bathroom
+    Men's bathroom
+    Coffee */
+    
+    
+/*New interactables
+    Rufus in the closet 
+    Book (kitchen)*/
+    
+//Rufus interactable
+[   ["It's Rufus. He looks at you with two huge eyes and whines.",
+    "Do you want to spend your time patting Rufus?"]
+    
+    ["You pat Rufus on the head and scratch behind his ears.",
+    "He rolls over expecting a belly-rub, and you oblige.",
+    "Petting this cute doggie fills you with delight and self-worth."] ]
+    //#25   

@@ -1,0 +1,16 @@
+Everyone starts at 40/100.
+Reach 100 and you will unlock the final conversation with that person.
+Do that conversation and you get a super powerup.
+Reach 0 and you get something really bad.
+
+Lines that include a plus or minus to someone's opinions of you will start with a 
++ or a -, a letter indicating which character,
+ and the number of points that they add or subtract.
+These should be paired with some kinda artistic indication (visual and/or sound) that indicates
+that the person either did or did not like what you said.
+
+A small menu that shows bars of how much a character likes you will be accessible via a button
+during free walk around time.
+ 
+Interactions that cause an increase or decrease in the number of seconds that the
+player gets for the next puzzle are marked with a #

@@ -1,0 +1,121 @@
+//Day 9: Leo brings his dog
+
+//OFFICE STILL with Leo and Roy
+
+//Roy
+[	["Good morning PLAYER. I hope things have been going well with Leo here.”,
+	“His dad and I are old golf buddies! We go waaay back!”,
+	“Due to this tangential connection, I am confident that this person I have never met will make an excellent employee.”],
+
+	[“?2How has Leo been so far?”],
+	[“+R2 Great! I knew he would be. My keen business sense never fails!”],
+	[“+R1 Oh! Hahahahaha! Excellent joke!”,
+	“That is impossible. He is my friend’s son, therefore he is a good employee.”],
+
+	[“On another note, I’ve detected something… strange in the office today.”,
+	“I was walking from the elevator through the hall earlier and I could have sworn I could smell…”,
+	“A dog.”,
+	“As you know, BusinessCorp is a strict No Dog Business.”,
+	“Doggy Business is the ONLY business that we simply do not tolerate!”,
+	“Let’s hope it was just my imagination.”,
+	“Well back to my napping chair.”,
+	“I mean— sleeping office.”,
+	“I mean….. business!”] ]
+
+//Player responses
+[	[“He’s been alright.”,
+	“He is lazy and awful.”]
+
+//Leo
+[	[“Umm…”,
+	“I… uhh…..”,
+	“I have to….. go. To the….. closet. For…..”,
+	“……….work and um, business!”] ]
+
+//FREEDOM to walk around
+
+/*Returning interactables
+    Work at your desk
+    Sabrina at her desk
+    Howard at his desk
+    Women's bathroom
+    Men's bathroom
+    Coffee */
+    
+/*New interactables
+    Leo in the storage closet
+
+//At this point Leo should be in the closet with something that looks like an obscured lump with a sheet over it.
+//If anyone goes and tries to interact with the closet during the Morning or Lunchtime, they get the following prompt
+
+//Leo
+[	[“?2Don’t come in! I’m uhh… busy”],	
+	[“Um… no. Uh, come back later please!”],
+	[“”]	]
+
+//Player responses
+[	[“Leo, let me in.”,
+	“Walk away from the closet.”]	]
+
+//Then if a player interacts with the closet during the Afternoon
+
+//Leo
+[	[“?2Don’t come in! I’m uhh… busy”],	
+	[“Uh… Okay. Let me open the door],
+	[“”]	]
+
+//Then the player can walk in and interact with Leo
+[	[“So, uh… PLAYER… This is Rufus.”]		]
+
+//The sheet lump image should now turn into a dog image.
+
+[	[“I know that dogs aren’t allowed here at BusinessCorp, but he’s just so freakin’ cute!”,
+	“Look at him! Look at his little ears and face!”
+	“He cried all day long when he was home alone without me yesterday. There were puddles of tears!”
+	“He chewed through my couch. THROUGH it! There is a whole in the MIDDLE of my couch all the way through!”,
+	“Please, he gets so stressed without me, but look at how happy he is here! Look at that smile!”,
+	“Wait, is that someone outside the door?”,
+	“Oh no, I think it’s Roy. Please go talk to him. Please don’t tell him about Rufus!”,
+	“If you help me hide Rufus, you can come in and pat him every single day if you like!”]	]
+
+//Now the player must go outside the office and interact with Roy, I think he can easily block the path so that the player
+//Can’t go anywhere else in the office.
+
+//If the player tries to interact with Leo now, they will be prompted with
+“Please, please go and talk to Roy. Don’t tell him about Rufus.”
+
+//Roy interaction
+[	[“I smell dog.”,
+	“The scent is unmistakably canine!”],
+	
+    [“?2I heard you talking to Leo in there, what is going on?”]
+	[“A BUSINESS OUTAGE!? What a calamity! I love business!”,
+	“I’ll go investigate right away!”],
+	[“+R20 Thank you for your honesty.”,
+	“I’ll have that dog removed from this office at once.”,
+	“But first, I need to go fill out the Dog Removal K-9 form in my office.”,
+	“Good day.”]	]
+
+//Player responses
+[	[“I heard there is a business outage in the basement. You better check it out!”,
+	“Leo’s dog is in the storage closet”]	]
+
+//Then, the player interacts with Leo one last time
+
+//If they got Roy to leave
+[	[“+L15 You are my hero! Rufus’s too!”,
+	“Oh, PLAYER, we can’t thank you enough! Seriously!”,
+	“I’ll keep Rufus in here during the work days. Please come in and give him some pats whenever you want!”]	]
+//Player’s thoughts afterwards
+“Well that was eventful. I guess I’ve got a dog friend at work now. I’d better head home for the day.”
+
+
+//If they sold out the pooch
+[	[“-L20 I can’t believe you, man. You are the worst.”,
+	“Get away from me. Don’t you so much as look at Rufus!”,
+	“I really thought you had my back. Now Rufus will be alone every single day and it’s your fault!”] ]
+//Player’s thoughts afterwards
+“Well that was eventful. I guess Leo is super pissed with me now, but Roy seemed pleased. I’d better head home for the day.”
+
+//If a player tries to interact with anything else during the Afternoon
+“I should really go see what is up with Leo in the storage closet.”

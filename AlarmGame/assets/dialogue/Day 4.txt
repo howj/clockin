@@ -1,0 +1,34 @@
+Day 4: First completely unstructured day. All the actions are the players choice.
+
+//OFFICE STILL with Sabrina
+[   ["Hey PLAYER! Just a normal day today.",
+    "Things are pretty slow right now, so feel free to walk around the office.",
+    "I'll be here if you need me!"] ]
+
+/*Returning interactables: 
+    Work at your desk
+    Sabrina at her desk
+    Women's bathroom
+    Men's bathroom
+    Closet
+    Coffee*/
+    
+/*New interactables:
+    Book (conference room)*/
+    
+//book interactable
+//BOOKS WILL BE GENERALIZED WITH TITLES AND A SHORT EXCEPT
+//Books will give a hint powerup
+
+[ ["It's a book titled " + bookName + ".",
+  "Do you want to spend time reading " + bookName + "?"]
+  
+  [bookExcerpt]
+  ["Reading is cool!",
+  "Reading fills you with wisdom!"]
+  //new hint powerup
+  
+//Explanation of new powerup
+"Hint powerups can be obtained by reading books.",
+"You can press 'H' while working on a puzzle to receive a special hint.",
+"This will consume the hint powerup."

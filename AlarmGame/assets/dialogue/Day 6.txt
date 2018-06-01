@@ -1,0 +1,90 @@
+//Day 6: Unstructured day with freedom
+
+//OFFICE STILL with Sabrina sitting Howard standing.
+
+//Howard
+[   ["Hello, PLAYER.",
+    "It seems like we got off on the wrong foot yesterday.",
+    "Most people are right footed, but I am left footed. It is one of the many things that makes me unique.",
+    "I came here to tell you that...",
+    "And let it be known that I am contractually required to say this,",
+    "I'm sorry if you maybe got offended by me being completely reasonable yesterday."]
+    ["3QI'm sorry, okay?"]
+    
+    ["I don't sweat. I perspire."],
+    ["-H2 You don't sound sincere. I can easily detect it in your tone"],
+    ["+H3 Enemies, you say?",
+    "What an interesting dynamic shift.",
+    "You have not heard the last of me, rival!"]
+    
+    ["Now, farewell! I must return to business. I'm sure you understand",
+    "Well, I'm sure you try to understand."] ]
+    
+//Howard leaves at this point
+    
+//Sabrina
+[   ["Oh that's Howard for you. Did you get a chance to talk to him yesterday?"],
+    ["3QDid he do anything fun on his vacation."],
+    
+    ["Oh, I'm sorry...",
+    "He must of just been in a bad mood. I for one love talking to you!"],
+    ["+S5 Oh wow! That's incredible!",
+    "I haven't heard of anyone whose gone to Jupiter!",
+    "I'll have to congratulate him later!"]
+    ["-S3 Oh... well that's a little harsh don't you think?",
+    "He's a little out there, but he's vital to business!"] ]
+     
+    
+//Player responses
+[   ["Don't sweat it, Howard.",
+    "Sure, whatever."
+    "I hate you. We are enemies now."],
+    
+    "He wasn't really interested in talking to me.",
+    "Yeah! He went to Antarctica! And Jupiter!",
+    "I don't care. I hate that guy so, so much."]
+    
+    
+//Freedom to walk around now
+
+/* Returning Interactables
+    Work at your desk
+    Sabrina at her desk
+    Howard at his desk
+    Women's bathroom
+    Men's bathroom
+    Closet
+    Coffee */
+    
+/* New interactables
+    Book (on someone's desk)
+    Sandwich in the kitchen */
+    
+//Sandwich interactable:
+//Sandwich should stay here until it is interacted with
+
+[   ["It's a sandwich. Somebody left it here.",
+    "It looks alright, but you don't know how long it has been here for.",
+    "Do you want to spend your time eating this sandwich?"]
+    
+    ["The sandwich tastes incredible!",
+    "Each bite is more satisfying than the last!",
+    "You ate the entire sandwich.",
+    "Let's hope nobody comes looking for it."] ]
+    //#+25
+    
+//    Then the next day at lunchtime
+
+[   ["You feel absolutely terrible all of a sudden!",
+    "You better make it to the bathroom, and fast!"]
+    
+//If they try interacting with anything else
+
+    ["No time. Need. Bathroom. Now."]
+
+//Then when interacting with the bathroom
+
+    ["You vomit spectacularly into the toilet."
+    "It must have been the sandwich that you ate yesterday."
+    "Your stomach feels awful, and you have barf on your shirt."] ]
+    #-25

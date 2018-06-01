@@ -1,0 +1,59 @@
+//Day 7: Unstructured day with freedom
+
+//OFFICE STILL with Sabrina
+
+//Sabrina
+[   ["And goooood morning to you!",
+    "Every day is a good day when I get to fill out a spreadsheet!"],
+    
+    ["3QWhat's your favorite kind of spreadsheet?"],
+    ["+S4 Oh me too! It's just so hard to choose!"],
+    ["Um...yeah!",
+    "My personal favorite is a spreadsheet with lots of numbers!",
+    "But letters are also pretty dang cool!"]
+    ["-S2 Oh... I'm sorry you feel that way.",
+    "But you come in to work everyday...",
+    "And you hate it here?"
+    "Oh no... that makes me sad..."],
+    
+    ["Oh, by the way, I hear we have a new hire starting tomorrow!",
+    "It'll be your job to train them, so make sure that you are well rested!",
+    "Well, I've got to get back to spreading my sheets! Heeheehee",
+    "Have a good business day!"] ]
+    
+    
+//Player responses
+[   ["I love all spreadsheets!",
+    "Are you serious right now?",
+    "I hate all work."] ]
+    
+/*Returning interactables
+    Work at your desk
+    Sabrina at her desk
+    Howard at his desk
+    Women's bathroom
+    Men's bathroom
+    Closet
+    Coffee */
+    
+/*New interactables
+    Book (kitchen)
+    Laptop (conference room) */
+    
+//Laptop interactable (can stay here for a few days if the player doesn't interact with it (maybe))
+
+[   ["It's a laptop.",
+    "The log in screen says 'Roy' and there is no password.",
+    "Do you want to spend your time snooping on Roy's computer?"]
+    
+    ["Most of this is just documents titled 'Business.docx' that are basically giberrish.",
+    "Here's one: 'Business is good. Do it. Tell employee to business lots. Make money large.'",
+    "What? It's like this guy has absolutely no idea what his job is.",
+    "Here's an email with the subject line 'YOU OWE US $$$'",
+    "It reads 'You think you can get away with this? We know where you work and where you live.",
+    "If we don't get what we want soon there will be consequences. We will find you and make you pay.",
+    "Whether its money, or something else you can't replace.'",
+    "Whoa.",
+    "This is kind of dark. I should stop reading before someone comes in.",
+    "You feel apprehensive, but pretty cool for being so sneaky."
+    //#20 ] ]

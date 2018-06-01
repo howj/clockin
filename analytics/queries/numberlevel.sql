@@ -1,0 +1,1 @@
+select count(dqid), uid from player_quests_log where cid=2 group by uid;

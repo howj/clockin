@@ -1,0 +1,69 @@
+//Day 13: Regular unstructured day
+
+//OFFICE Still with Howard and Leo
+
+//Howard
+[   ["Well, I'm glad they put the two least experienced people here at the same desk.",
+    "It's nice for the top deliverers to have you out of our way."],
+    
+    ["?2Or I should say, MY way."],
+    ["-H5 Don't patronize me. I see through your words",
+    "Don't think for a moment that you can trick me with flattery."],
+    ["+H5 Actually, yes, yes I did.",
+    "How observant of you. I am impressed."],
+    
+    ["Well, PLAYER, I hope that nothing distracts you from your work.",
+    "Things are usually quite stable day to day here, so I anticipate that you will be fine.",
+    "It would be a real surprise if something out of the ordinary were to happen.",
+    "A real surprise indeed..."]
+    
+//Howard leaves
+
+//Player responses
+[   ["Oh Howard, you are so reliable!",
+    "Did you just come here to brag and insult us?"] ]
+
+//Leo
+[   ["Is it just me or am I the only regular person at this office?",
+    "At least Sabrina's pretty ordinary, but apart from her you've got...",
+    "A egotistical psycho nerd,",
+    "Two bickering freaks in the warehouse,",
+    "And a fat old business clown."],
+    
+    ["?3Then there's you, and you are kind of..."]
+    ["Sure, yeah, I guess."],
+    ["Yeah, now that you mention it, you are kind of just a blank canvas,",
+    "Almost like everything you say was someone else's decision,",
+    "Hmm... weird."],
+    ["What? What are you talking about?",
+    "The work we do is boring as shit, no way you are a secret agent.",
+    "What, you fight crime with staplers? Give people papercuts? Please."]
+    
+    ["Eh, whatever, time to pretend to work!"]  ]
+    
+
+//Player responses
+[   ["Professional?",
+    "Regular?",
+    "Literally a secret agent. Like, I'm not kidding."]    ]
+    
+//Player now free to walk around
+
+/*Returning interactable
+	(Office)
+    Work at your desk
+    Sabrina at her desk
+    Howard at his desk
+    Women's bathroom
+    Men's bathroom
+    Closet
+    Coffee 
+    
+    elevator down (office)
+	elevator up (warehouse)
+	stack of boxes (warehouse)
+	forklift (warehouse)
+	dumpster (warehouse)
+	Shaun and Paul (warehouse) 
+    */
+    

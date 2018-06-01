@@ -1,0 +1,84 @@
+//Day 5: Introduction of Howard.
+
+//OFFICE STILL with Sabrina
+[   ["Hey PLAYER! Goooood morning!",
+    "You can't spell morning without work! Hahaha!"],
+    
+    ["?3Get it?"],
+    ["+S5 Thanks! Ralphie told me that one this morning!"],
+    ["Yeah. It was. Because like... you work in the morning.",
+    "That's what makes it a joke.",
+    "...you're not laughing."],
+    [-S6 Hey! Now that's just rude!"],
+    
+    ["Well, it's not just the two of us here anymore. Howard's back!",
+    "He was on vacation too, just like you.",
+    "You should go by his desk this morning! You two might be able to share vacation stories!"] ]
+    
+//Player responses
+[   ["Yeah! That's funny!",
+    "Um, was that a joke?",
+    "You aren't funny."] ]
+    
+//FREE TO WALK AROUND    
+    
+/*Returning interactables: 
+    Work at your desk
+    Sabrina at her desk
+    Women's bathroom
+    Men's bathroom
+    Closet
+    Coffee*/
+    
+/*New interactables:
+    Howard at his desk */
+    
+//Howard introduction:
+//Must be done during the Morning period, if the player tries to do anything else at this time:
+"I should go talk to Howard at his desk."
+
+[   ["Howard is typing up a storm at his computer.",
+    "His glasses are about two inches away from the screen.",
+    "?2He doesn't seem to notice you approaching at all."],
+    
+    ["-H5 Don't ever touch me. EVER."],
+    ["-H5 Congratulations, you can make noise. Want a trophy?"],
+    
+    ["What do you want?",
+    "You are probably here to ask me about my vacation aren't you?",
+    "Well, go ahead and ask me.",
+    "?2ASK ME!"]
+    
+    ["Oh wow! You are SO unpredictable!",
+    "It was great. I didn't have to leave my house for a month and I didn't have to talk to you."],
+    ["+H2 Huh, hehehe. That's bold. You're funny.",
+    "But you are wrong,"],
+    ["Manners are a formality that I simply have no time for.",
+    "I'm not rude, I'm efficient.",
+    "I don't let things as petty as emotions slow down my work.",
+    "I have the highest business coefficient of all BusinessCorp employees.",
+    "It's 44. I knew you were going to ask.",
+    "Now leave me alone." ] ]
+   
+//Thought right after walking away
+"Well, that's Howard I guess. I should probably leave him alone for today"
+    
+//Player responses
+[   ["Tap him lightly on the shoulder.",
+    "Scream 'HOWARD!'"],
+    
+    ["How was your vacation?",
+    "You're an asshole."] ]
+    
+    
+//If they try interacting with him again
+"I should really give Howard some space."
+    
+    
+    
+    
+    
+    
+    
+    
+    

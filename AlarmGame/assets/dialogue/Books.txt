@@ -1,0 +1,36 @@
+Title: "BusinessCorp Handbook"
+Excerpt: 
+    "As a businessperson for BusinessCorp you should always be busy.",
+    "If you find yourself short on business to attend to,",
+    "Remember the three rules to a healthy business!",
+    "1: Always be busy!",
+    "2: Never don't be busy!",
+    "3: Pay your employees as little as is legally possible!"
+
+Title: "War and Piece"
+Excerpt:
+    "Chad was a square. Brad was a triangle.",
+    "They hated each other so much that they decided to go to war.",
+    "Chad won because squares have more sides than triangles."
+    "The End."
+
+Title: "The Taking Tree"
+Excerpt:
+    "'Please don't take that,' said the boy.",
+    "'I don't care. I only take,' said the taking tree.",
+    "The tree then took the boy's wallet."
+    "The End."
+
+Title: "The Old Man and the See"
+Excerpt:
+    "There once was an old man who couldn't see very well.",
+    "One day, he put on glasses.",
+    "Then he could see better.",
+    "The End."
+    
+Title: "Pie and Prejudice"
+Excerpt:
+    "'I don't like that pie,' said the girl.",
+    "'It's a cherry pie, but I like blueberry.'",
+    "This girl is prejudiced against certain types of pie.",
+    "The End."

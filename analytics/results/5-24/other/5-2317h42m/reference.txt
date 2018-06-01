@@ -1,0 +1,15 @@
+For reference for release 2 (May 18th, 2018)
+
+N1 = 1
+D1 = 2
+N2 = 3
+D2 = 4 
+
+Digits = 5
+Seconds = 6
+Grid = 7
+Seasons = 8
+
+D3 = 9
+D4 = 10
+D5 = 11

@@ -1,0 +1,155 @@
+Day 3: First moments of freedom. Ends with discussion with boss.
+
+//OFFICE STILL with Sabrina
+[   ["Oh, hey PLAYER, glad to see you back!",
+    "Another day, another business... day.",
+    "To be honest, I've been so tired these days with my kids keeping me up.",
+    ["2QThey are just so cute though! Do you want to see a picture of them?"],
+    
+    [Interaction1Sabrina],
+    ["Oh, that's okay. Let me know if you change your mind!"], 
+    
+    ["Oh, that reminds me, big bossman Roy said that we wanted to speak with you.",
+    "He is in the conference room. You should go talk to him this afternoon."]  ]
+    
+//Player options
+    ["Spend time talking with Sabrina"]
+    ["Walk around the office instead."]
+
+    
+//WALKING AROUND THE OFFICE freedom
+
+//NEW CONCEPT, INTERACTABLES. PLAYER IS PROMPTED WITH A QUESTION AND
+//MAY RESPOND YES OR NO. IF YES, THEY GET THE FOLLOWING RESPONSE
+//AND MAY RECEIVE SOMETHING (POWERUP, INCREASE WITH SOMEONE'S RELATIONSHIP
+//PLAYER SHOULD INTERACT WITH SPACEBAR AND THE GAME SHOULD BE PAUSED
+//WHILE BEING PROMPTED WITH THEIR RESPONSE.
+
+/*Returning interactables: 
+    coffee (kitchen)
+    work at computer (your desk)*/
+    
+/* New interactables: 
+    women's bathroom
+    men's bathroom
+    closet
+    Roy in conference room*/
+    
+/*Available conversations:
+    Sabrina at her desk*/
+
+//Prompt when interacting with coffee:
+[   ["Do you want to spend time drinking coffee?"],
+    ["Ahh, that's nice!",
+    "I'm feeling super energetic!"] ]
+    //Obtain one time-powerup
+    
+//Prompt when working at your desk
+[   ["Do you want to spend time working at your desk?"]
+    ["You accomplish some business tasks.",
+    "Roy notices that you are logged in and is pleased.",
+    "However, work makes you a little bit tired."] ]
+    //+5R
+    //#-10
+
+//Women's bathroom
+[   ["I guess I kind of have to go.",
+    "Do you want to spend your time going to the bathroom?"]
+    ["You feel relieved."]
+    //#10
+    
+//Men's bathroom
+[   ["I should probably use the women's bathroom.",
+    "Unless I'm feeling kind of adventurous.",
+    "Do you want to spend your time going to the men's bathroom?"]
+    
+    //50/50 chance of either one of these happening
+    
+    ["You broke a rule.",
+    "You feel crushingly remorseful."] ]
+    //#-20
+    
+    // -or-
+    
+    ["You broke a rule.",
+    "You feel like a total badass."] ]
+    //#20
+    
+//Closet
+[   ["It's the closet.",
+    "It's pretty messy in here.",
+    "Do you want to spend your time cleaning up the closet?"]
+    
+    ["You spend hours cleaning the closet.",
+    "It looks almost identical to when you started",
+    "You feel tired and sad."] ]
+    //#-5
+    
+//Sabrina
+//CONVERSATION1
+//Will be implemented as a Conversation
+
+//Roy in Conference room.
+
+//if Morning or Lunchtime
+[ ["Come back this afternoon. I'm busy right now."] ]
+
+//if Afternoon
+[   ["Ah, PLAYER, I'm glad you got the chance to come by!"],
+
+    ["Q3How is your business going?"],
+    ["That's excellent! I'm proud of you!"]
+    ["Oh no.",
+    "It's always hard coming back to work after a vacation.",
+    "But I'm sure you will bounce right back in no time!"]
+    ["+R3 OH! Excellent!",
+    "That is actually my favorite adjective of all time!"]
+    
+    ["I figured it would be good to go over some logistics since you've been back for a couple of days.",
+    "Namely, I want to let you know what will happen if you are late",
+    "Every employee can get up to three strikes!",
+    "Show up late, and you get a strike!",
+    "Late again? Then you're up to two strikes!",
+    "What happens when you get three strikes, you ask?",
+    ".....",
+    "..........",
+    "...............",
+    "I'll kill you.",
+    ".....",
+    "Just kidding! Hahahahahahahaha!",
+    "But you will be promptly terminated and I will burn your career to the ground and salt the earth with its ashes.",
+    "So just show up on time! It should be easy! Just set your alarm!",
+    "Also, I would never fire an employee who is popular and raises morale",
+    "I'd recommend becoming good friends with people to secure your position."],
+    
+    ["?3Alright, have I made things clear?"],
+    ["+R2 Good!"]
+    ["Well a little review never hurt!",
+    "Unless you are reviewing falling down.",
+    "Or being hit by a sword.",
+    "Or an anvil.",
+    "Anyway!"]
+    ["-R5 What did you just say?",
+    "I hope for your sake that was a joke.",
+    "Either way it wasn't funny.",
+    "Business waits for no one."]
+    
+    ["Well, it's 5 o'clock! Time to turn in for the day",
+    "Don't worry though, the business will still be here when you get back!"] ]
+    
+    
+//Player responses with Roy
+[   ["Good.",
+    "Bad",
+    "Businessy"],
+    
+    ["Crystal clear",
+    "I already knew all of that",
+    "I'll show up late if I want to"] ]
+
+//If player tries to do anything else in the afternoon
+"I should really go talk to Roy in the conference room."
+
+
+
+

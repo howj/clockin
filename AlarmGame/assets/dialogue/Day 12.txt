@@ -1,0 +1,179 @@
+/*For next release, we might want to consider not introducing the warehouse,
+in which case this can just be a regular unstructured day.
+But if we can make a new map, I think it would be cool*/
+
+//Day 12: Introduction of Shaun and Paul
+
+//OFFICE STILL with Roy and Leo
+
+//Laptop should no longer be in the conference room, even if player didn’t interact with it
+
+//Roy
+[	[“Greetings, PLAYER! I hope your business hasn’t stopped businessing.”,
+	“I personally haven’t felt richer—“,
+	“I mean fuller with other people’s money—“,
+	“I mean… better. I haven’t felt better. I haven’t felt BETTER.”],
+
+	[“?3How have things been for you the past couple of days?”],
+	[“+R5 Hooray! You are quite the professional!”],
+	[“-R3 Come on now, where’s your positive attitude?”],
+	[“Uhhhhh....”,
+	“Hahahaha! Funny joke! You are quite the comedian!”,
+	“That’s... um… impossible though.”],
+
+	[“Say, we received a new business shipment in the warehouse downstairs this morning.”,
+	“Would you be able to take the elevator down to the warehouse right now?”,
+	“The warehouse workers, Shaun and Paul, should have some business papers.”],
+	
+	[“?2Would you deliver them to the conference room for me?]
+	[“+R3 Excellent! Your can do attitude fills my bank account.”
+	“I mean— uh… my heart. Fills my heart.”],
+	[“-R5 Excuuuse me!? Your job is whatever I determine it is.”,
+	“And this is a business concern! You should feel honored I selected you.”]
+
+	[“I expect those papers in the conference room promptly.”,
+	“Good day now!”]	]
+
+//Player responses
+[	[“Full of business!”,
+	“Pretty average. Not much going on.”,
+	“The strangest thing happened yesterday. My computer was hacked.”],
+
+	[“Sure!”,
+	“That isn’t part of my job.”]	]
+
+//Roy disappears
+
+//Leo
+[	[“Man… Why does my dad hang out with that dude?”,
+	“Maybe he pays my dad too, like, to be his friend?”,
+	“Only way you could get me to hang out with him”]	]
+
+
+//player can now walk around
+//If they try to interact with anything other than the elevator, they see
+“I should head to the elevator and down to the warehouse.”
+
+//when they get to the warehouse, if they interact with anything other than Shaun and Paul, they see
+“I should go talk to Shaun and Paul about those business papers.”
+
+//Shaun and Paul interaction
+//Shaun
+[	[“Hi there! My name is Shaun!”]	]
+//Paul
+[	[“And MY name is Paul!”]	]
+//Shaun
+[	[“Would you SHUT UP!? I’m talking here!”]	]
+//Paul
+[	[“HEY! YOU shut up! I’M talking here!”]	]
+//Shaun
+[	[“No, YOU shut up!”]	]
+//Paul
+[	[“No, YOU!!!”,
+	“……….”],
+	[“?2Anyway, what did you want?”],
+	[“Oh, okay. I’ll get them right away.”]
+	[“-P5 I am not an idiot, but Shaun definitely is!”,
+	“Anyway, let me get you those papers”] 	]
+//Shaun
+[	[“No, I’LL get them!” ME!”,
+	“You screw EVERYTHING up Paul!”,
+	“He’d probably come back with a fish!”]	]
+//Paul
+[	[“That’s stupid!”]	]
+//Shaun
+[	[“YOU’RE stupid!”,
+	“Anyway, here are the papers. Take them!”,
+	“Now get out, I need to kick Paul’s ass!”]	]
+//Paul
+[	[“Ohhhh, I’d like to see you try! Get over here!!!”]	]
+
+//Player responses
+[	[“Roy asked me to grab the new business papers from you”,
+	“Give me the business papers and shut up you idiots.”] ]
+
+//Player thoughts
+“Well that was weird… Better get these papers to the conference room”
+
+//Then player must interact with the conference table (new interactable), if they do anything else, they see
+“I better get these papers to the conference room”
+
+//at this point, time progresses and the player is free to walk around.
+
+
+/*Returning interactable
+	(Office)
+    Work at your desk
+    Sabrina at her desk
+    Howard at his desk
+    Women's bathroom
+    Men's bathroom
+    Closet
+    Coffee
+    */
+
+/*New interactables
+	elevator down (office)
+	elevator up (warehouse)
+	stack of boxes (warehouse)
+	forklift (warehouse)
+	dumpster (warehouse)
+	Shaun and Paul (warehouse) */
+
+//elevator down (office)
+[	[“Do you want to ride the elevator down to the warehouse?”]  ]
+
+//elevator up (warehouse)
+[	[“Do you want to ride the elevator up to the office?”]  ]
+
+//stack of boxes (warehouse)
+[	[“It’s a stack of boxes. They are labelled ‘Surplus. Help Yourself.’”,
+	“It could have anything on the inside.”,
+	“Do you want to spend your time opening one of the boxes?”]
+
+//each of these should have an equal likelihood of happening
+[	[“It’s a book!”]
+	//book interaction, same as other books except they have to read it
+	]
+
+[	[“It’s empty…”,
+	“You feel slightly disappointed.” ]
+	//%-10	]
+
+[	[“It’s got another box on the inside.”,
+	“Which has another box on the inside…”,
+	“Which is filled with another box…”,
+	“Which is filled with another box…”,
+	“Which is filled with another box…”,
+	“You finally get to the last box.”
+	“You find twenty dollars!”,
+	“Your perseverance has paid off! You feel great!” ]
+	//%+15 ]
+
+[	[“There is a canary inside!”,
+	“It flies off out of a window, tweeting along the way.”,
+	“You just saved a trapped, innocent life.”,
+	“You are a freaking superhero, dude!”]
+	//%30 ]
+
+
+//forklift (warehouse)
+[	[“It’s a forklift.”,
+	“Do you want to spend your time operating the forklift?”]
+
+	[“You are not trained to do this.”,
+	“You have no idea what you are doing”,
+	“You smash a pile of boxes and shatter a window.”
+	“Oops!”,
+	 “You feel stupid.” ]
+	%-15 ]
+
+//dumpster (warehouse)
+[	[“It’s a dumpster.”,
+	“Do you want to spend time diving into and searching the dumpster?”]
+
+	[“You find some cans and paperwork.”,
+	“You take these out of the dumpster and place them into the recycling.”,
+	“You are doing your part to save the planet!”]
+	%+10 ]
+	

@@ -1,0 +1,67 @@
+//Day 14: Regular unstructured day
+
+//OFFICE STILL with Leo and Roy
+
+//Roy
+[   ["Good money! I mean-- morning!",
+    "I hope you are both having lot's of funds! I mean-- fun...",
+    "I sure do love embezzlement! I mean--"],
+    
+    ["?2Erm..."],
+    ["+R10 YES! Yams, bells, and mints are my three favorite things!",
+    "Well, next to business that is!"],
+    ["-R8 Ah!? What? I-- you, what?..."],
+    
+    ["I have to go now to do some laundering. I mean laundry!",
+    "My suit got a stain on it! Laundry! Like clothes.",
+    "Not laundering... who said laundering?....",
+    "..........",
+    "Goodbye."] ]
+    
+//Player responses
+[   ["You mean yams, bells, and mints?",
+    "I know that you are a fraud."] ]
+
+
+//Leo
+[   ["Dude, that guy is one of a kind.",
+    "Sigh, doesn't it kind of feel like the days blur together though?",
+    "Like, things are just so uneventful. Every day just more pretending to work.",
+    "I counted all of the coffee filters yesterday, just because I could.",
+    "We have four-thousand-and-ninety-four....."],
+    
+    ["?3Sigh... Don't you agree that things are so easy and predictable here?"],
+    
+    ["-L5 ...You suck, man. You are so god damn lame."],
+    ["+L4 Hahaha, if only! That would at least make things interesting!"],
+    ["...What? That doesn't make any sense.",
+    "Maybe it's just the latter. Maybe you are just insane..."]
+    
+    ["Well, back to work I go!",
+    "And by that I mean I'm going to draw make another powerpoint with the word 'business' a thousand times.",
+    "...I hate my job."] ]
+    
+//Player responses
+[   ["Yup! Business is great! I love work!",
+    "No, I got hacked and Roy is a criminal.",
+    "No. My alarm clock changes every night and I'm going insane."] ]
+    
+//Player is free to walk around.
+
+/*Returning interactable
+	(Office)
+    Work at your desk
+    Sabrina at her desk
+    Howard at his desk
+    Women's bathroom
+    Men's bathroom
+    Closet
+    Coffee 
+    
+    elevator down (office)
+	elevator up (warehouse)
+	stack of boxes (warehouse)
+	forklift (warehouse)
+	dumpster (warehouse)
+	Shaun and Paul (warehouse) 
+    */

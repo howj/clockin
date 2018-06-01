@@ -1,0 +1,134 @@
+//Day 15: Endings presented
+
+//OFFICE STILL with just you
+
+[   ["This is weird. It's just me. Where is everyone?",
+    "I better log into my computer at the very least.",
+    "What's this? A new email sent to all BusinessCorp employees,",
+    "With the subject line 'BusinessCorp CEO Tax Returns 1995-2018'",
+    "I better read this...",
+    "'BusinessCorp CEO Roy Schmoy has been evading corporate taxes for over two decades now.'",
+    "'His company has been linked to several money laundering schemes tied to international drug distribution rings.'",
+    "'Rampant union code violations. Millions of dollars simply missing. Books cooked to a papery stew.'",
+    "The email continues with ample evidence of BusinessCorp's illegal actions.",
+    "I could lose my job. Oh my god. What am I going to do?"]   ]
+    
+//Sabrina appears
+
+//Sabrina
+[   ["Hey, PLAYER. Looks like this is the end of the road for us.",
+    "Roy didn't even come in to work today, looks like this email's got him scared.",
+    "There's no way BusinessCorp can recover from this if this information goes public.",
+    "It looks like this email has only been sent to employees so far,"],
+    
+    ["?3 We need to make sure that the authorities find out about this."],
+    ["I know I am. It's the right thing to do."],
+    ["Well I am sure. I know that this is the right thing to do."],
+    ["-S10 No, I am not crazy. Don't yell at me.",
+    "I really don't think you are like the rest, PLAYER, you are a good person."],
+    
+    ["We need to make sure we don't get lumped in with Roy.",
+    "The only way we can do that is to make help the authorities.",
+    "Think about it, it's the only way we get out of this as the good guys.",
+    "We better tell them soon, tomorrow even.",
+    "If you don't, then I'll have to do this on my own.",
+    "Think about it."]   ]
+    
+//Player responses
+[   ["You might be right.",
+    "I'm not sure that is a good idea.",
+    "Hell no! Are you crazy?"]  ]
+    
+//Sabrina leaves
+
+//Howard appears
+
+//Howard
+[   ["?2Greetings, comrade!"],
+
+    ["Oh come on, you think anyone else here could have hacked your machine?"],
+    ["+H5 Mmmmhmmmm, you better believe it!"],
+    
+    ["That's right, baby! It's me! I've done my homework and Roy is going down!",
+    "It was easy, really, hacking your machine, finding Roy's trail of financial bread crumbs.",
+    "I'm honestly surprised I didn't do things sooner, but I needed you on my side.",
+    "You see, I need you to help me pull off my master plan!",
+    "Roy won't listen to a word I say now, but he trusts you more than anyone else here.",
+    "You have to help me rile him up, get him scared and agitated!",
+    "Do it for me and we can extort that idiot for everything he is worth!",
+    "We simply threaten to go public, make him believe it, then get him to wire all of his funds to us."],
+    
+    ["?3We delete all correspondence, and flee with the cash! What do you say?"]
+    ["+H10 That's because it is so brilliant!",
+    "We will do it together, and we will be rich til our dying days!"],
+    ["-H5 Do you really doubt my capabilities after all I've demonstrated!?"],
+    ["-H15 I see...",
+    "I implore you to reconsider, but doubt you are capable of such mental clarity,",
+    "You foolish, stupid woman."]
+    
+    ["I will strike tomorrow, with or without you. Good day!"]
+
+//Player responses
+[   ["What?",
+    "It's you! Isn't it?"],
+    
+    ["It's incredibly tempting.",
+    "Do you actually think we can get away with that?",
+    "Screw you, Howard. You're a sick, sad little man."] ]
+      
+//Howard leaves
+
+//Leo appears
+[   ["Man, this business stuff is crazy. People are crazy...",
+    "I mean, the stuff people will do for just some money. Like, who cares really?",
+    "I just wanna make a sandcastle and eat spaghetti..."],
+    
+    ["?2Don't tell me you are getting wrappep up in all this?"],
+    ["-L10 Shut up.",
+    "This doesn't matter. Everyone keeps yapping on about business and money.",
+    "No one stops to think about anything else!"],
+    ["+L10 ...Me too.",
+    "I didn't know you felt the same. This whole business thing is just stupid."],
+    
+    ["I wanna let you in on a secret. All that time I was on Reddit, I was actually doing something else.",
+    "Well, I was on Reddit like half the time, but the other half of the time,",
+    "I was looking through Howard's coding work, and, well, I'm actually pretty good.",
+    "I figured out a way to wipe it all. A security flaw that I guess Howard didn't catch.",
+    "Or maybe he kept it there on purpose...",
+    "Either way, just the push of a button, and BusinessCorp basically stops existing.",
+    "No employee records, no tax returns, nothing.",
+    "We'd all keep the money we have and we could just... walk away."],
+    
+    ["?3Would you just walk away from this nonsense with me?"],
+    ["Then just do it. It's that simple. Finally something is."],
+    ["It's not too simple. It's the only thing that makes any sense in this mess."],
+    ["-L10 Figures, you are just like everyone else."],
+    
+    ["I won't do it unless you want to as well.",
+    "I can't rob you of your job, your whole professional record.",
+    "I'm lazy as hell, but I'm not a bad person."
+    "I'm leaving for the day, but find me tomorrow."]   ]
+    
+//Player responses
+[   ["Leo, this is important.",
+    "I feel numb. These people are crazy and I can't relate."],
+    
+    ["I want to.",
+    "It seems too simple, I don't know.",
+    "You're pathetic. Your answer to all of this is to do nothing!?"] ]
+    
+//Leo leaves
+
+
+//Player's thoughts
+[   ["Wow. I have a lot to think about tonight.",
+    "No one else is here, so there is no point in staying today.",
+    "Sabrina, Howard, and Leo all seem at odds with each other.",
+    "It seems I can't side with more than one person.",
+    "Maybe I don't have to side with anyone.",
+    "Either way, it looks like tomorrow might be my last day at BusinessCorp ever."]    ]
+    
+//Player goes home, and the puzzle can probably be something reeeeally simple, or impossible to lose, as the game is almost over.
+    
+    
+    
