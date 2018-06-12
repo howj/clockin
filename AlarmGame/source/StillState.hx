@@ -31,8 +31,6 @@ class StillState extends FlxState
         add(desk);
 
         FlxG.camera.fade(0x00000000, 2, true);
-
-        Main.LOGGER.logLevelStart(Reg.currentLevel * 2);
         
         // var office = Reg.data().office;
         var nextState;
@@ -42,8 +40,6 @@ class StillState extends FlxState
             nextState = Type.createInstance(Type.resolveClass(Reg.data().office), [0]);
 		
         this.dialogueOverlay = new Dialogue(charaLines, responses, function(r:Array<Int>) {
-            if (Reg.currentLevel == 1)
-                Main.LOGGER.logLevelEnd();
             FlxG.camera.fade(0x00000000, 1, false, FlxG.switchState.bind(nextState));
         });
 

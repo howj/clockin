@@ -1,8 +1,6 @@
-package levels;
+package offices;
 
-// import flixel.FlxG;
 import ui.Dialogue;
-// import ui.Overlay;
 import flixel.FlxSprite;
 
 class D9Office extends OfficeState 
@@ -66,7 +64,7 @@ class D9Office extends OfficeState
 	];
 	static var leoFinal1 = [
 		["+L15 You are my hero! Rufus’s too!",
-		"Oh, PLAYER, we can’t thank you enough! Seriously!",
+		"Oh, " + Reg.name + ", we can’t thank you enough! Seriously!",
 		"I’ll keep Rufus in here during the work days. Please come in and give him some pats whenever you want!"]
 	];
 	static var leoFinal2 = [
@@ -99,7 +97,6 @@ class D9Office extends OfficeState
 				if (r[0] == 1) {
 					sabrina.complete = true;
 					Reg.relationships["Sabrina"] += 10;
-					Main.LOGGER.logLevelAction(LoggingActions.SABRINA_PLUS, _timePeriod);
 					advanceTime();
 				}
 				closeInteraction(sabrina);
@@ -111,7 +108,6 @@ class D9Office extends OfficeState
 				if (r[0] == 1) {
 					howard.complete = true;
 					Reg.relationships["Howard"] += 10;
-					Main.LOGGER.logLevelAction(LoggingActions.HOWARD_PLUS, _timePeriod);
 					closeInteraction(howard);
 					advanceTime();
 				} else

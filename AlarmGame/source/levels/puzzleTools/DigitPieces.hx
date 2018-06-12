@@ -1,9 +1,10 @@
-package;
+package levels.puzzleTools;
+
 import flixel.FlxG;
 import flixel.FlxSprite;
 import NightState;
 import flixel.ui.FlxButton;
-import Digits;
+import levels.puzzleTools.Digits;
 import flixel.group.FlxSpriteGroup;
 import flixel.text.FlxText;
 import flixel.util.FlxSpriteUtil;

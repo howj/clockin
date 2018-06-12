@@ -1,9 +1,6 @@
-package levels;
+package offices;
 
-// import flixel.FlxG;
 import ui.Dialogue;
-import ui.Overlay;
-// import flixel.FlxSprite;
 
 class D8Office extends OfficeState 
 {
@@ -48,7 +45,6 @@ class D8Office extends OfficeState
 				if (r[0] == 1) {
 					sabrina.complete = true;
 					Reg.relationships["Sabrina"] += 10;
-					Main.LOGGER.logLevelAction(LoggingActions.SABRINA_PLUS, _timePeriod);
 					advanceTime();
 				}
 				closeInteraction(sabrina);
@@ -60,7 +56,6 @@ class D8Office extends OfficeState
 				if (r[0] == 1) {
 					howard.complete = true;
 					Reg.relationships["Howard"] += 10;
-					Main.LOGGER.logLevelAction(LoggingActions.HOWARD_PLUS, _timePeriod);
 					closeInteraction(howard);
 					advanceTime();
 				} else
@@ -74,7 +69,6 @@ class D8Office extends OfficeState
 				if (r[0] == 1) {
 					leo.complete = true;
 					Reg.relationships["Leo"] += 10;
-					Main.LOGGER.logLevelAction(LoggingActions.LEO_PLUS, _timePeriod);
 					closeInteraction(leo);
 					advanceTime();
 				} else

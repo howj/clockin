@@ -3,14 +3,8 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import NightState;
 import flixel.ui.FlxButton;
-// import Digits;
 import flixel.group.FlxSpriteGroup;
 import flixel.text.FlxText;
-// import flixel.util.FlxSpriteUtil;
-// import flixel.util.FlxColor;
-// import flixel.effects.FlxFlicker;
-// import flixel.util.FlxTimer;
-// import flixel.system.FlxSound;
 import flixel.math.FlxRandom;
 
 class SecondsPuzzleState extends NightState
@@ -20,17 +14,6 @@ class SecondsPuzzleState extends NightState
 	private var arrowsDown:FlxSpriteGroup;
 
     private var d:Array<Int>;
-    // private var d1:Int;
-    // private var d2:Int;
-    // private var d3:Int;
-    // private var d4:Int;
-    // private var d5:Int;
-
-    // private var digit1:FlxSprite;
-    // private var digit2:FlxSprite;
-    // private var digit3:FlxSprite;
-    // private var digit4:FlxSprite;
-    // private var digit5:FlxSprite;
 
     //current time to be permanently displayed
     private var currentH:Int;
@@ -71,16 +54,7 @@ class SecondsPuzzleState extends NightState
         digits.add(new FlxSprite(246, 244));
         digits.add(new FlxSprite(332, 244));
         digits.add(new FlxSprite(418, 244));
-        // digit1 = new FlxSprite(40, 244);
-        // digit2 = new FlxSprite(140, 244);
-        // digit3 = new FlxSprite(240, 244);
-        // digit4 = new FlxSprite(340, 244);
-        // digit5 = new FlxSprite(440, 244);
-
-        //Reg.currentLevel = 0;
-        // totalTime = 210;  // 3.5 minutes currently
         
-        //nextState = new D2State();
 		this.textData.goalTime = "" + goalH + ":" + goalM;
 
         super.create();
@@ -97,25 +71,12 @@ class SecondsPuzzleState extends NightState
         
         correctAnswer = ((totalHs * 60) + totalMs);
         this.d = [0, 0, 0, 0, 0];
-        // d1 = 0;
-        // d2 = 0;
-        // d3 = 0;
-        // d4 = 0;
-        // d5 = 0;
-        // Main.LOGGER.logLevelStart(6);
     }
 
     override private function drawPuzzle():Void
 	{
         super.drawPuzzle();
 
-        // digits = new FlxSpriteGroup();
-
-        // digits.add(digit1);
-        // digits.add(digit2);
-        // digits.add(digit3);
-        // digits.add(digit4);
-        // digits.add(digit5);
         digits.forEach(function (d) {
             d.loadGraphic("assets/images/night/digits.png", true, 63, 91);
         });
@@ -154,12 +115,6 @@ class SecondsPuzzleState extends NightState
             i += 1;
         });
 
-        // digits.add(digit1);
-        // digits.add(digit2);
-        // digits.add(digit3);
-        // digits.add(digit4);
-        // digits.add(digit5);
-
         add(table);
         add(clock);
         add(setButton);
@@ -181,59 +136,6 @@ class SecondsPuzzleState extends NightState
         // trace(i + ": " + d[i] + " : " + s.animation.frameIndex);
     }
 
-    // private function arrowCallback2(val:Int):Void
-    // {
-    //     d2 = (d2 + val) % 10;
-    //     if (d2 == -1) {
-    //         d2 = 9;
-    //     }
-    //     digit2.animation.frameIndex = Std.int(d2);
-    // }
-
-    // private function arrowCallback3(val:Int):Void
-    // {
-    //     d3 = (d3 + val) % 10;
-    //     if (d3 == -1) {
-    //         d3 = 9;
-    //     }
-    //     digit3.animation.frameIndex = Std.int(d3);
-    // }
-
-    // private function arrowCallback4(val:Int):Void
-    // {
-    //     d4 = (d4 + val) % 10;
-    //     if (d4 == -1) {
-    //         d4 = 9;
-    //     }
-    //     digit4.animation.frameIndex = Std.int(d4);
-    // }
-
-    // private function arrowCallback5(val:Int):Void
-    // {
-    //     d5 = (d5 + val) % 10;
-    //     if (d5 == -1) {
-    //         d5 = 9;
-    //     }
-    //     digit5.animation.frameIndex = Std.int(d5);
-    // }
-
-    // override public function openMessage():Void
-    // {   
-    //     var text = ["ERROR no message found"];
-    //     if (true) { //TO DO: this needs to check for the current level?
-	// 		text = ["This is placeholder text for now. Set the alarm for " + goalH + ":" + goalM + "am"];
-	// 	}
-	// 	this.startOverlay.setMsgs(text);
-	// 	this.startOverlay.setOnLast(function () {
-	// 		this.startOverlay.setOverlayAlpha(0.5, 2);
-	// 		this.startOverlay.setButtons("Start", function() {
-	// 			this.startOverlay.fade(0, 0, false);
-	// 			startLevel();
-	// 		});
-	// 	});
-	// 	this.startOverlay.advance();
-    // }
-
     override private function timeCorrect():Bool
     {
         //more unresolved identifier errors on this declared variable... :(
@@ -246,29 +148,6 @@ class SecondsPuzzleState extends NightState
 
         return ((goalD1 == d[0]) && (goalD2 == d[1]) && (goalD3 == d[2]) && (goalD4 == d[3]) && (goalD5 == d[4]));
     }
-
-    // override private function sleep():Void
-	// {
-    //     //TO DO: Implement progressing to next day as either winner or loser
-    //     if (win) { //solved puzzle with correct answer
-    //         trace("WINNER");
-    //         var sleepy = FlxG.sound.load("assets/sounds/yay.wav");
-    //         sleepy.play();
-    //     } else { //incorrect answer, ur sleeping in!
-    //         trace("LOSER");
-    //         var wrong = FlxG.sound.load("assets/sounds/wrong.wav");
-    //         wrong.play();
-    //     }
-    //     trace("The correct answer is " + goalD1 + " " + goalD2 + " " + goalD3 + " " + goalD4 + " " + goalD5);
-    //     var yawn = FlxG.sound.load("assets/sounds/yawn.wav");
-    //     yawn.play();
-
-    //     FlxG.camera.fade(0x00000000, 3, false, function()
-    //     {
-    //         // TODO: use resolveClass to pass in strings for class path
-    //         FlxG.switchState(new GridPuzzleState());
-    //     });
-	// }
 
     private function drawSecondsText():Void
     {

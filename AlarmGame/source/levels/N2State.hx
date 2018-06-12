@@ -1,17 +1,11 @@
 package levels;
 import levels.N1State;
 import flixel.FlxG;
-// import flixel.FlxState;
 import flixel.FlxSprite;
-// import NightState;
-// import flixel.ui.FlxButton;
-import Digits;
+import levels.puzzleTools.Digits;
 import flixel.group.FlxSpriteGroup;
-// import flixel.text.FlxText;
 import flixel.util.FlxSpriteUtil;
-// import flixel.util.FlxColor;
 import flixel.effects.FlxFlicker;
-// import flixel.util.FlxTimer;
 import flixel.addons.plugin.FlxMouseControl;
 import flixel.addons.display.FlxExtendedSprite;
 import flixel.math.FlxRect;
@@ -38,7 +32,6 @@ class N2State extends N1State
         FlxG.plugins.add(new FlxMouseControl());
 
         super.create();
-        Main.LOGGER.logLevelStart(3);
 	    // textData = { goalTime : "7:35" };
     }
 
@@ -156,7 +149,6 @@ class N2State extends N1State
 
     override private function onSetAlarm():Void {
         if (!power) {
-            Main.LOGGER.logLevelAction(LoggingActions.SET_WHEN_POWER_OFF);
 			bubbleThought("Looks like it's off.", 415, 440, 2);
 		} else {
             super.onSetAlarm();
@@ -166,7 +158,6 @@ class N2State extends N1State
     override private function canChange():Bool
 	{
 		if (!power) {
-            Main.LOGGER.logLevelAction(LoggingActions.CLICK_ARROW_WHEN_POWER_OFF);
 			bubbleThought("Looks like it's off.", 415, 440, 2);
 			return false;
 		} 

@@ -1,20 +1,8 @@
 package levels;
 import flixel.FlxG;
-// import flixel.FlxState;
 import flixel.FlxSprite;
-// import NightState;
 import flixel.ui.FlxButton;
-// import Digits;
 import flixel.group.FlxSpriteGroup;
-// import flixel.text.FlxText;
-// import flixel.util.FlxSpriteUtil;
-// import flixel.util.FlxColor;
-// import flixel.effects.FlxFlicker;
-// import flixel.util.FlxTimer;
-// import flixel.addons.plugin.FlxMouseControl;
-// import flixel.addons.display.FlxExtendedSprite;
-// import flixel.math.FlxRect;
-// import flixel.FlxObject;
 
 
 class RomanNumeralsState extends NightState
@@ -24,18 +12,6 @@ class RomanNumeralsState extends NightState
     var pressed:Bool;
 
     private var barBars:Array<FlxSprite>;
-    // private var bar1:FlxSprite;
-    // private var bar2:FlxSprite;
-    // private var bar3:FlxSprite;
-    // private var bar4:FlxSprite;
-    // private var bar5:FlxSprite;
-    // private var bar6:FlxSprite;
-    // private var bar7:FlxSprite;
-    // private var bar8:FlxSprite;
-    // private var bar9:FlxSprite;
-    // private var bar10:FlxSprite;
-    // private var bar11:FlxSprite;
-    // private var bar12:FlxSprite;
 
     private var button1:FlxButton;
     private var button2:FlxButton;
@@ -68,43 +44,12 @@ class RomanNumeralsState extends NightState
 
         var barSprites = new FlxSpriteGroup();
 
-        // bar1 = new FlxSprite(180,190);
-        // bar2 = new FlxSprite(220,190);
-        // bar3 = new FlxSprite(260,190);
-        // bar4 = new FlxSprite(300,190);
-        // bar5 = new FlxSprite(340,190);
-        // bar6 = new FlxSprite(380,190);
-        // bar7 = new FlxSprite(420,190);
-        // bar8 = new FlxSprite(460,190);
-        // bar9 = new FlxSprite(500,190);
-        // bar10 = new FlxSprite(540,190);
-        // bar11 = new FlxSprite(580,190);
-        // bar12 = new FlxSprite(620,190);
-
-        // barSprites.add(bar1);
-        // barSprites.add(bar2);
-        // barSprites.add(bar3);
-        // barSprites.add(bar4);
-        // barSprites.add(bar5);
-        // barSprites.add(bar6);
-        // barSprites.add(bar7);
-        // barSprites.add(bar8);
-        // barSprites.add(bar9);
-        // barSprites.add(bar10);
-        // barSprites.add(bar11);
-        // barSprites.add(bar12);
         for (i in 0...12) {
             var bar = new FlxSprite(0, 190, "assets/images/night/lvl_roman/vertical-2.png");
             barSprites.add(bar);
             bar.origin.set(12, 5);
         }
         barBars = barSprites.members;
-        // for (br in barSprites) {
-        //     br.loadGraphic("assets/images/night/lvl_roman/vertical-2.png");
-        //     // br.scale.set(0.35,0.45);
-        // }
-
-        //bar1.angle = 100;
 
         add(barSprites);
         buttons = new FlxSpriteGroup(62,305);

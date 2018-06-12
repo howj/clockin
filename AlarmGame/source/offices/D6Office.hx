@@ -1,4 +1,4 @@
-package levels;
+package offices;
 
 // import flixel.FlxG;
 import ui.Dialogue;
@@ -37,7 +37,6 @@ class D6Office extends OfficeState
 				new Dialogue(sabrinaPrompt, OfficeState.yesNo, function(r:Array<Int>) {
 				if (r[0] == 1) {
 					sabrina.complete = true;
-					Main.LOGGER.logLevelAction(LoggingActions.SABRINA_PLUS, _timePeriod);
 					Reg.relationships["Sabrina"] += 10;
 					advanceTime();
 				}
@@ -49,7 +48,6 @@ class D6Office extends OfficeState
 				new Dialogue(howardPrompt, OfficeState.yesNo, function(r:Array<Int>) {
 				if (r[0] == 1) {
 					howard.complete = true;
-					Main.LOGGER.logLevelAction(LoggingActions.HOWARD_PLUS, _timePeriod);
 					Reg.relationships["Howard"] += 10;
 					advanceTime();
 				}

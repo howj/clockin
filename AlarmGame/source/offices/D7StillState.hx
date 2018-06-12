@@ -1,9 +1,8 @@
-package levels;
+package offices;
 
 import flixel.FlxSprite;
-import flixel.FlxState;
 import flixel.FlxG;
-import ui.Dialogue;
+import offices.D7Office;
 
 class D7StillState extends StillState
 {

@@ -1,9 +1,8 @@
-package levels;
+package offices;
 
 import flixel.FlxSprite;
-// import flixel.FlxState;
 import flixel.FlxG;
-// import ui.Dialogue;
+import offices.D8Office;
 
 class D8StillState extends StillState
 {
@@ -52,7 +51,6 @@ class D8StillState extends StillState
 
 		super.create();
 
-        //TO DO: change this to Leo
         var leo = new FlxSprite(290, 150, "assets/images/day/side/leo_sitting.png");
         // can insert or add. Use insert to put behind previously added objects (like the desk)
         insert(3, leo);

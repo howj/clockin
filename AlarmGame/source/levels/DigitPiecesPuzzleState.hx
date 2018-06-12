@@ -1,18 +1,13 @@
 package levels;
-// import levels.N1State;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import NightState;
-import DigitPieces;
+import levels.puzzleTools.DigitPieces;
 import flixel.ui.FlxButton;
 import flixel.addons.plugin.FlxMouseControl;
 import flixel.addons.display.FlxExtendedSprite;
 import flixel.group.FlxSpriteGroup;
-// import flixel.text.FlxText;
 import flixel.util.FlxSpriteUtil;
-// import flixel.util.FlxColor;
-// import flixel.effects.FlxFlicker;
-// import flixel.util.FlxTimer;
 import flixel.math.FlxRect;
 
 class DigitPiecesPuzzleState extends NightState
@@ -31,7 +26,6 @@ class DigitPiecesPuzzleState extends NightState
         this.outletOpen = false;
         FlxG.plugins.add(new FlxMouseControl());
         super.create();
-        // Main.LOGGER.logLevelStart(5);
     }
 
     override private function drawPuzzle():Void

@@ -102,7 +102,6 @@ class OfficeState extends FlxState
 
 	override public function create():Void
 	{
-		Main.LOGGER.logLevelAction(LoggingActions.START_OFFICE); // what does this do?
 		_timePeriod = Reg.dayStartTime;
 		// trace(Reg.dayStartTime);
 		// trace(_timePeriod);
@@ -121,9 +120,6 @@ class OfficeState extends FlxState
 		_tada = FlxG.sound.load("assets/sounds/tada.wav");
 		_flush = FlxG.sound.load("assets/sounds/flush.wav");
 
-		// _hud = new HUD();
-		// add(_hud);
-		
 		// #if mobile
 		// virtualPad = new FlxVirtualPad(FULL, NONE);		
 		// add(virtualPad);
@@ -218,7 +214,6 @@ class OfficeState extends FlxState
 				obj = new Interactable(x, y, "assets/images/day/office/coffee_machine.png",
 					new Dialogue(coffeePrompt, yesNo, function(r:Array<Int>) {
 					if (r[0] == 1) {
-						Main.LOGGER.logLevelAction(LoggingActions.COFFEE, _timePeriod); // figure out a way to log more info, such as daystarttime and currlevel
 						obj.complete = true;
 						addPowerUp(0);
 						advanceTime();
@@ -230,7 +225,6 @@ class OfficeState extends FlxState
 				obj = new Interactable(x, y, "assets/images/day/office/my_computer.png",
 					new Dialogue(myComputerPrompt, yesNo, function(r:Array<Int>) {
 					if (r[0] == 1) {
-						Main.LOGGER.logLevelAction(LoggingActions.COMPUTER, _timePeriod);
 						obj.complete = true;
 						Reg.timeAdjustment -= 10;
 						Reg.relationships["Roy"] += 5;
@@ -250,7 +244,6 @@ class OfficeState extends FlxState
 								advanceTime();
 							},1000);
 						});
-						Main.LOGGER.logLevelAction(LoggingActions.WOMENS_ROOM, _timePeriod);
 						obj.complete = true;
 						Reg.timeAdjustment += 10;
 					}
@@ -271,7 +264,6 @@ class OfficeState extends FlxState
 							},1000);
 						});
 						obj.complete = true;
-						Main.LOGGER.logLevelAction(LoggingActions.MENS_ROOM, _timePeriod);
 						if (r[1] == 0)
 							Reg.timeAdjustment -= 20;
 						else
@@ -286,7 +278,6 @@ class OfficeState extends FlxState
 				obj = new Interactable(x, y, "assets/images/day/office/closet.png",
 					new Dialogue(closetPrompt, yesNo, function(r:Array<Int>) {
 					if (r[0] == 1) {
-						Main.LOGGER.logLevelAction(LoggingActions.CLOSET, _timePeriod);
 						obj.complete = true;
 						Reg.timeAdjustment -= 5;
 						advanceTime();
@@ -307,7 +298,6 @@ class OfficeState extends FlxState
 				obj = new Interactable(x, y, imgPath,
 					new Dialogue(bookPrompt, yesNo, function(r:Array<Int>) {
 					if (r[0] == 1) {
-						Main.LOGGER.logLevelAction(LoggingActions.BOOK, _timePeriod);
 						Reg.booksRead.push(Std.parseInt(entityData.get("id")));
 						obj.complete = true;
 						addPowerUp(1);
@@ -323,7 +313,6 @@ class OfficeState extends FlxState
 					obj = new Interactable(x, y, "assets/images/day/office/sandwich.png",
 						new Dialogue(sandwichPrompt, yesNo, function(r:Array<Int>) {
 							if (r[0] == 1) {
-								Main.LOGGER.logLevelAction(LoggingActions.SANDWICH, _timePeriod);
 								Reg.timeAdjustment += 25;
 								Reg.sandwichDay = Reg.currentLevel;
 								obj.kill();
@@ -339,7 +328,6 @@ class OfficeState extends FlxState
 					new Dialogue(bossLaptopPrompt, yesNo, function(r:Array<Int>) {
 						if (r[0] == 1) {
 							obj.complete = true;
-							Main.LOGGER.logLevelAction(LoggingActions.BOSS_LAPTOP, _timePeriod);
 							Reg.readBossLaptop = true;
 							Reg.timeAdjustment += 20;
 							advanceTime();
@@ -371,7 +359,6 @@ class OfficeState extends FlxState
 		// trace(_timePeriod);
 		if (_timePeriod >= 3) {
 			Reg.dayStartTime = 0;
-			Main.LOGGER.logLevelEnd();
 			FlxG.camera.fade(0x0, 1, false, function()
 			{
 				FlxG.switchState(Type.createInstance(Type.resolveClass(Reg.data(Reg.currentLevel + 1).night), [0]));
@@ -549,7 +536,6 @@ class OfficeState extends FlxState
 			friendshipMenu.revive();
 		_destX = -1;
 		_destY = -1;
-		Main.LOGGER.logLevelAction(LoggingActions.VIEW_FRIENDSHIPS);
 	}
 
 	private function removeFriendships():Void

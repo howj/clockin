@@ -1,21 +1,9 @@
 package levels;
-// import levels.N1State;
 import flixel.FlxG;
-// import flixel.FlxState;
 import flixel.FlxSprite;
 import NightState;
 import flixel.ui.FlxButton;
-// import Digits;
 import flixel.group.FlxSpriteGroup;
-// import flixel.text.FlxText;
-// import flixel.util.FlxSpriteUtil;
-// import flixel.util.FlxColor;
-// import flixel.effects.FlxFlicker;
-// import flixel.util.FlxTimer;
-// import flixel.addons.plugin.FlxMouseControl;
-// import flixel.addons.display.FlxExtendedSprite;
-// import flixel.math.FlxRect;
-// import flixel.math.FlxRandom;
 
 
 class PairsPuzzleState extends NightState

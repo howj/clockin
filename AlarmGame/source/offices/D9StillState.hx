@@ -1,9 +1,8 @@
-package levels;
+package offices;
 
 import flixel.FlxSprite;
-import flixel.FlxState;
 import flixel.FlxG;
-import ui.Dialogue;
+import offices.D9Office;
 
 class D9StillState extends StillState
 {
@@ -11,30 +10,8 @@ class D9StillState extends StillState
 
     override public function create():Void
 	{
-
-        /*dog dialogue to be included when/if D9 walking around is also included,
-        for now, it doesn't if the player can't go interact with the dog and might need to be revamped
-        
-                        ["On another note, I’ve detected something… strange in the office today.",
-                        "I was walking from the elevator through the hall earlier and I could have sworn I could smelled...",
-                        "A dog.",
-                        "As you know, BusinessCorp is a strict No Dog Business.",
-                        "Doggy Business is the ONLY kind of business that we simply do not tolerate!",
-                        "Let’s hope it was just my imagination.",
-                        "Well back to my napping chair.",
-                        "I mean— sleeping office.",
-                        "I mean... business!"],
-                        
-                        ["$Leo"],
-                        ["Umm…",
-                        "I... uhh.....",
-                        "I have to... go. To the.... closet. For.....",
-                        ".....work and um, business!"] ];
-
-        */
-
         charaLines = [	["$Roy"],
-                        ["Good morning PLAYER. I hope things have been going well with Leo here.",
+                        ["Good morning " + Reg.name + ". I hope things have been going well with Leo here.",
                         "His dad and I are old golf buddies! We go waaay back!",
                         "Due to this tangential connection, I am confident that this person I have never met will make an excellent employee."],
 

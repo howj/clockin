@@ -3,15 +3,9 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import NightState;
 import flixel.ui.FlxButton;
-import Grid;
+import levels.puzzleTools.Grid;
 import flixel.group.FlxSpriteGroup;
-// import flixel.text.FlxText;
-// import flixel.util.FlxSpriteUtil;
-// import flixel.util.FlxColor;
 import flixel.effects.FlxFlicker;
-// import flixel.util.FlxTimer;
-// import flixel.system.FlxSound;
-// import flixel.math.FlxRandom;
 
 class GridPuzzleState extends NightState
 {
@@ -40,10 +34,8 @@ class GridPuzzleState extends NightState
     override public function create():Void
 	{
         Reg.currentLevel = 5;
-        // totalTime = 300;  // 5 minutes?
 		this.textData.goalTime = "7:35";
         super.create();
-        // Main.LOGGER.logLevelStart(7);
     }
 
     override public function update(elapsed:Float):Void
@@ -160,7 +152,6 @@ class GridPuzzleState extends NightState
 
     override public function onUnsetAlarm():Void
 	{
-		Main.LOGGER.logLevelAction(LoggingActions.UNSET_ALARM);
 		timer.active = true;  // start timer from pause
 		this.settingTime = false;
 		this.setOverlay.fade(0, 0);

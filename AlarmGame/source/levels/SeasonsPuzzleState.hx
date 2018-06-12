@@ -3,7 +3,7 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import NightState;
 import flixel.ui.FlxButton;
-import flixel.group.FlxSpriteGroup;
+// import flixel.group.FlxSpriteGroup;
 import flixel.text.FlxText;
 import flixel.util.FlxSpriteUtil;
 import flixel.effects.FlxFlicker;
@@ -64,7 +64,6 @@ class SeasonsPuzzleState extends NightState
         super.create();
         boop = FlxG.sound.load("assets/sounds/boop.wav");
         map = new Map<Int, Array<Int>>();
-        // Main.LOGGER.logLevelStart(8);
     }
 
     override private function drawPuzzle():Void

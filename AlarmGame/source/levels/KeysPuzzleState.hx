@@ -3,16 +3,11 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import NightState;
 import flixel.ui.FlxButton;
-import Blocks;
-import flixel.group.FlxSpriteGroup;
+import levels.puzzleTools.Blocks;
 import flixel.text.FlxText;
-// import flixel.util.FlxSpriteUtil;
-// import flixel.util.FlxColor;
 import flixel.effects.FlxFlicker;
 import flixel.group.FlxGroup;
-// import flixel.util.FlxTimer;
 import flixel.system.FlxSound;
-// import flixel.math.FlxRandom;
 
 class KeysPuzzleState extends NightState
 {
@@ -139,7 +134,6 @@ class KeysPuzzleState extends NightState
 
     override public function onUnsetAlarm():Void
 	{
-		Main.LOGGER.logLevelAction(LoggingActions.UNSET_ALARM);
 		timer.active = true;  // start timer from pause
 		this.settingTime = false;
 		this.setOverlay.fade(0, 0);

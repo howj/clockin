@@ -111,7 +111,6 @@ class NightState extends FlxState
 		loading.animation.play("working");
 
 		Reg.save(false);
-        Main.LOGGER.logLevelStart(Reg.currentLevel * 2 - 1, {goalTime: this.textData.goalTime});
 
 		this.setOverlay = new Overlay();
 		this.setOverlay.setModal(400, 100, 0xFFDDAA00);
@@ -140,11 +139,9 @@ class NightState extends FlxState
 						winLevel();
 					}, 1500);
 				} else {
-					// Main.LOGGER.logLevelAction(LoggingActions.RIGHT_SOLUTION);
 					winLevel();
 				}
 			} else {
-				// Main.LOGGER.logLevelAction(LoggingActions.WRONG_SOLUTION);
 				failLevel();
 			}
 			//sleep();
@@ -250,7 +247,6 @@ class NightState extends FlxState
 		this.startOverlay.setOnLast(function () {
 			this.startOverlay.setOverlayAlpha(0.5, 1);
 			this.startOverlay.setButtons("Start", function() {
-				// Main.LOGGER.logLevelAction(LoggingActions.CLICK_START);
 				this.startOverlay.fade(0, 0, false);
 				startLevel();
 			});
@@ -272,7 +268,6 @@ class NightState extends FlxState
 	// 	this.startOverlay.setOnLast(function () {
 	// 		this.startOverlay.setOverlayAlpha(0.5, 1);
 	// 		this.startOverlay.setButtons("Continue", function() {
-	// 			// Main.LOGGER.logLevelAction(LoggingActions.CLICK_START);
 	// 			// this.startOverlay.fade(0, 0, false);
 	// 			sleep2();
 	// 		});
@@ -316,7 +311,6 @@ class NightState extends FlxState
 						timer.reset(newTime);
 						tada.play();
 						up.kill();
-						Main.LOGGER.logLevelAction(LoggingActions.USED_TIME_POWERUP, Reg.currentLevel);
 						Reg.powerUps.remove(i);
 					};
 					up.loadGraphic("assets/images/ui/powerup.png", true, 23, 20);
@@ -326,7 +320,6 @@ class NightState extends FlxState
 							bubbleThought(Reg.data().hint.shift(), 15.0);
 							tada.play();
 							up.kill();
-							Main.LOGGER.logLevelAction(LoggingActions.USED_HINT_POWERUP, Reg.currentLevel);
 							Reg.powerUps.remove(i);
 						} else {
 							bubbleThought("No more hints!", 15.0);
@@ -377,7 +370,6 @@ class NightState extends FlxState
 
 	public function onUnsetAlarm():Void
 	{
-		Main.LOGGER.logLevelAction(LoggingActions.UNSET_ALARM);
 		timer.active = true;  // start timer from pause
 		this.settingTime = false;
 		this.setOverlay.fade(0, 0);
@@ -391,7 +383,6 @@ class NightState extends FlxState
 	{
 		// Reg.failsConsecutive = Reg.failsConsecutive + 1; // increment failsConsecutive
 		Reg.lives -= 1;
-		Main.LOGGER.logLevelAction(LoggingActions.LOST_LIFE, Reg.lives);
 
 		if (Reg.livesExplained && Reg.currentLevel > 3) {
 			liveNum.kill();
@@ -407,9 +398,7 @@ class NightState extends FlxState
 		var wrong = FlxG.sound.load("assets/sounds/wrong.wav");
         wrong.play();
 			if (timer.finished)
-		Main.LOGGER.logLevelAction(LoggingActions.OUT_OF_TIME);
 		// TODO: save failure info here
-		Main.LOGGER.logLevelEnd({won: false, time: timer.elapsedTime, answer: getTime()});
 		mornLines = [["$Midday"],  
 						["...Well, shoot.",
 						"It's almost lunchtime! I must have set my alarm wrong, gotta go!"]];
@@ -424,7 +413,6 @@ class NightState extends FlxState
 		// TODO: save success info here
 		var win = FlxG.sound.load("assets/sounds/yay.wav");
 		win.play();
-		Main.LOGGER.logLevelEnd({won: true, time: timer.elapsedTime});
 		// mornLines = [["$Morning"],  
         //                 ["...Ahh, yesterday was pretty productive. But on to another day of the grind..."]];
 		sleep();

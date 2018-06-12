@@ -227,8 +227,6 @@ class Dialogue extends Overlay
         // trace("de: " + this.nextState);
         if (this.callback != null)
             this.callback(this.chosenResponses);
-        // if (Reg.currentLevel == 1)
-        //     Main.LOGGER.logLevelEnd();
         // FlxG.camera.fade(0x00000000, 1, false, FlxG.switchState.bind(this.nextState));
     }
 

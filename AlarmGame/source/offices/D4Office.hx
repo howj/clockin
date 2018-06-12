@@ -1,9 +1,7 @@
-package levels;
+package offices;
 
-// import flixel.FlxG;
 import ui.Dialogue;
 import ui.Overlay;
-// import flixel.FlxSprite;
 
 class D4Office extends OfficeState 
 {
@@ -37,7 +35,6 @@ class D4Office extends OfficeState
      		sabrina = new Interactable(x, y, "assets/images/day/office/worker-0.png", 
 				new Dialogue(sabrinaPrompt1, OfficeState.yesNo, function (r:Array<Int>) {
 					if (r[0] == 1) {
-						Main.LOGGER.logLevelAction(LoggingActions.SABRINA_PLUS, _timePeriod);
 						Reg.relationships["Sabrina"] += 10;
 						advanceTime();
 						closeInteraction(sabrina);

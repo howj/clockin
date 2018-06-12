@@ -1,18 +1,13 @@
 package levels;
 
-// import flixel.FlxState;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import NightState;
 import flixel.ui.FlxButton;
-import Digits;
+import levels.puzzleTools.Digits;
 import ui.Dialogue;
 import flixel.group.FlxSpriteGroup;
-// import flixel.text.FlxText;
-// import flixel.util.FlxSpriteUtil;
-// import flixel.util.FlxColor;
 import flixel.effects.FlxFlicker;
-// import flixel.system.FlxSound;
 
 class N1State extends NightState
 {
@@ -51,21 +46,12 @@ class N1State extends NightState
 
 	override private function openMessage():Void
 	{
-		Main.LOGGER.logLevelStart(1);
 		this.startOverlay.setOverlayAlpha(1.0);
 
 		var door = FlxG.sound.load("assets/sounds/door_open_close.wav");
 		door.play();
 		haxe.Timer.delay(this.openMessageHelper, 3000);
 	}
-
-	// private function openMornMessageHelper():Void { super.openMornMessage(); }
-	// override private function openMornMessage():Void
-	// {
-	// 	this.startOverlay.setOverlayAlpha(1.0);
-
-	// 	this.openMornMessageHelper();
-	// }
 
 	override private function drawPuzzle():Void
 	{
@@ -116,8 +102,6 @@ class N1State extends NightState
 			digit.shiftHr(val);
 			digits = digit.getDigits();
 			add(digits);
-		} else {
-			Main.LOGGER.logLevelAction(LoggingActions.CLICK_ARROW_BFORE_SET);
 		}
 	}
 
@@ -127,8 +111,6 @@ class N1State extends NightState
 			digit.shiftMin(val);
 			digits = digit.getDigits();
 			add(digits);
-		} else {
-			Main.LOGGER.logLevelAction(LoggingActions.CLICK_ARROW_BFORE_SET);
 		}
 	}
 
@@ -161,32 +143,8 @@ class N1State extends NightState
 	override private function sleep():Void
 	{
 		FlxFlicker.stopFlickering(digits);
-		// var yawn = FlxG.sound.load("assets/sounds/yawn.wav");
-		// yawn.play();
-		// FlxG.camera.fade(0x00000000, 3, false, function()
-		// 	{
-		// 		FlxG.camera.fade(0x0, 3, true);
-		// 		slept = true;
-		// 		mode.animation.frameIndex = 0;
-
-		// 		// TODO: None of the below calls seem to be working
-
-		// 		// openMornMessageHelper();
-		// 		// openMornMessage();
-		// 		morningDialogue();
-		// 	});
-
 		super.sleep();
 	}
-
-	// private function morningDialogue():Void
-	// {
-	// 	var nextState;
-	// 	nextState = (Type.createInstance(Type.resolveClass(Reg.data().day), [0]));
-	// 	this.dialogueOverlay = new Dialogue(charaLines, responses, function(r:Array<Int>) {
-	// 		FlxG.camera.fade(0x00000000, 1, false, FlxG.switchState.bind(nextState));
-	// 	});
-	// }
 
 	private function canChange():Bool
 	{

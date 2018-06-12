@@ -1,9 +1,6 @@
-package levels;
+package offices;
 
-// import flixel.FlxG;
 import ui.Dialogue;
-import ui.Overlay;
-// import flixel.FlxSprite;
 
 class D3Office extends OfficeState 
 {
@@ -87,7 +84,6 @@ class D3Office extends OfficeState
 		if (Reg.dayStartTime > 0) {
 			_ticktock.play();
 			sabrina.dialogue = new Dialogue(sabrinaPrompt2, [], function(r:Array<Int>) { closeInteraction(sabrina); });
-			Main.LOGGER.logLevelAction(LoggingActions.SABRINA_PLUS, _timePeriod);
 			Reg.relationships["Sabrina"] += 10;
 		}
 		if (Reg.dayStartTime == 2)
@@ -108,7 +104,6 @@ class D3Office extends OfficeState
 						remove(sabrina.dialogue);
 						sabrina.dialogue = new Dialogue(sabrinaPrompt2, [], function(r:Array<Int>) { closeInteraction(sabrina); });
 						Reg.relationships["Sabrina"] += 10;
-						Main.LOGGER.logLevelAction(LoggingActions.SABRINA_PLUS, _timePeriod);
 						advanceTime();
 					}
 					closeInteraction(sabrina);
@@ -117,7 +112,6 @@ class D3Office extends OfficeState
 		} else if (entityName == "boss") {
 			boss = new Interactable(x, y, "assets/images/day/office/boss.png",
 				new Dialogue(bossPrompt1, [], function (r:Array<Int>) {
-					Main.LOGGER.logLevelAction(LoggingActions.BOSS_TALK, _timePeriod);
 					closeInteraction(boss);
 				}));
 			_interactables.add(boss);
@@ -141,10 +135,8 @@ class D3Office extends OfficeState
 			boss.complete = true;
 			if (r[0] == 1)
 				Reg.relationships["Roy"] += 2;
-				Main.LOGGER.logLevelAction(LoggingActions.BOSS_PLUS, _timePeriod);
 			if (r[1] == 3)
 				Reg.relationships["Roy"] -= 5;
-				Main.LOGGER.logLevelAction(LoggingActions.BOSS_MINUS, _timePeriod);
 			Reg.livesExplained = true;
 			Reg.canAccessFriendMenu = true;
 			closeInteraction(boss);

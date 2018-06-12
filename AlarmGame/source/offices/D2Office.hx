@@ -1,9 +1,7 @@
-package levels;
+package offices;
 
-// import flixel.FlxG;
 import ui.Dialogue;
 import ui.Overlay;
-import flixel.FlxSprite;
 
 class D2Office extends OfficeState 
 {

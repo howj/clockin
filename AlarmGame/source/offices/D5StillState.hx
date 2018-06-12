@@ -1,13 +1,11 @@
-package levels;
+package offices;
 
 import flixel.FlxSprite;
-import flixel.FlxState;
 import flixel.FlxG;
-import ui.Dialogue;
+import offices.D5Office;
 
 class D5StillState extends StillState
 {
-
     var howard:FlxSprite;
     override public function create():Void
 	{

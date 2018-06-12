@@ -1,7 +1,7 @@
 package;
 /*Registry class to store references to objects and global state*/
 import flixel.util.FlxSave;
-import TbcState;
+// import TbcState;
 
 typedef Level = { totalTime:Int, night:String, day:String, office:String, nightMsg:Array<String>, hint:Array<String>  };
 
@@ -113,7 +113,7 @@ class Reg
         // Tutorial
         {   totalTime : 0,
             night: "levels.N1State",
-            day: "levels.D1StillState",
+            day: "offices.D1StillState",
             office: "",
             nightMsg: [
                 "Well...that was a vacation!\n\nIt's back to work tomorrow, bright and early. It would be real bad to sleep in and show up late on my first day back.",
@@ -124,8 +124,8 @@ class Reg
         // Up/down by diff mini numbers
         {   totalTime: 300,
             night: "levels.N2State",
-            day: "levels.D2StillState",
-            office: "levels.D2Office",
+            day: "offices.D2StillState",
+            office: "offices.D2Office",
             nightMsg: [
                 "I got home early so... I guess I'll sleep. I should keep it up, and get up on time at ::goalTime::.\n\nLet's see...does this clock look different?"
             ],
@@ -134,8 +134,8 @@ class Reg
         // Digit pieces
         {   totalTime: Reg.DigitPiecesTime,
             night: "levels.DigitPiecesPuzzleState",
-            day: "levels.D3StillState",
-            office: "levels.D3Office",
+            day: "offices.D3StillState",
+            office: "offices.D3Office",
             nightMsg: [
                 "That was another quick day at the office. But knowing Sabrina, things are going to start ramping up tomorrow.",
                 "Okay, time to set my alarm again. I think it might've gotten knocked around a little this morning... \n\nThis time I need to wake up at ::goalTime::."
@@ -145,8 +145,8 @@ class Reg
         // Min to alarm
         {   totalTime: Reg.MinutesPuzzleTime,
             night: "levels.SecondsPuzzleState",
-            day: "levels.D4StillState",
-            office: "levels.D4Office",        
+            day: "offices.D4StillState",
+            office: "offices.D4Office",        
             nightMsg: [
                 MinsNightMsg
             ],
@@ -155,8 +155,8 @@ class Reg
         // Grid puzzle
         {   totalTime: Reg.GridTime,
             night: "levels.GridPuzzleState",
-            day: "levels.D5StillState",
-            office: "levels.D5Office",     
+            day: "offices.D5StillState",
+            office: "offices.D5Office",     
             nightMsg: [
                 "Another puzzle...Seriously, I just want to get to work everyday.\n\nOk, let's set the alarm for ::goalTime::."
             ],
@@ -165,8 +165,8 @@ class Reg
         // Seasons puzzle
         {   totalTime: Reg.SeasonsTime,
             night: "levels.SeasonsPuzzleState",
-            day: "levels.D6StillState",
-            office: "levels.D6Office",   
+            day: "offices.D6StillState",
+            office: "offices.D6Office",   
             nightMsg: [
                 "Today felt long... Ok, tomorrow I need to wake up at ::goalTime::.\n\n Wait, am I in a dream already..? "
             ],
@@ -175,8 +175,8 @@ class Reg
         // Pairs puzzle
         {   totalTime: Reg.PairsTime,
             night: "levels.PairsPuzzleState",
-            day: "levels.D7StillState",
-            office: "levels.D7Office",   
+            day: "offices.D7StillState",
+            office: "offices.D7Office",   
             nightMsg: [
                 "Well at least Howard...kinda apologized today. Tomorrow, I need to get up at ::goalTime::."
             ],
@@ -186,8 +186,8 @@ class Reg
         // Shift puzzle
         {   totalTime: Reg.ShiftTime,
             night: "levels.ShiftPuzzleState",
-            day: "levels.D8StillState",
-            office: "levels.D8Office",   
+            day: "offices.D8StillState",
+            office: "offices.D8Office",   
             nightMsg: [
                 "Another businessy day! Tomorrow, I need to get up at ::goalTime::."
             ],
@@ -197,8 +197,8 @@ class Reg
         // Roman Numerals puzzle
         {   totalTime: Reg.RomanNumeralsTime,
             night: "levels.RomanNumeralsState",
-            day: "levels.D9StillState",
-            office: "levels.D9Office",   
+            day: "offices.D9StillState",
+            office: "offices.D9Office",   
             nightMsg: [
                 "So I met thet messy guy, Leo... Anyway I need to get up at ::goalTime:: tomorrow."
             ],

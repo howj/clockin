@@ -1,9 +1,6 @@
-package levels;
+package offices;
 
-// import flixel.FlxG;
 import ui.Dialogue;
-import ui.Overlay;
-// import flixel.FlxSprite;
 
 class D5Office extends OfficeState 
 {
@@ -69,7 +66,6 @@ class D5Office extends OfficeState
 				new Dialogue(sabrinaPrompt1, OfficeState.yesNo, function(r:Array<Int>) {
 				if (r[0] == 1) {
 					sabrina.complete = true;
-					Main.LOGGER.logLevelAction(LoggingActions.SABRINA_PLUS, _timePeriod);
 					Reg.relationships["Sabrina"] += 10;
 					advanceTime();
 				}
@@ -81,11 +77,9 @@ class D5Office extends OfficeState
 				new Dialogue(howardPrompt1, howardResponse, function(r:Array<Int>) {
 				//Howard is here now
         		Reg.relationships.set("Howard", 20);
-				Main.LOGGER.logLevelAction(LoggingActions.HOWARD_MINUS, _timePeriod);
 				Reg.relationships["Howard"] -= 5;
 				if (r[1] == 2)
 					Reg.relationships["Howard"] += 2;
-					Main.LOGGER.logLevelAction(LoggingActions.HOWARD_PLUS, _timePeriod);
 				// remove(howard.dialogue);
 				closeInteraction(howard);
 				resetInteractables();

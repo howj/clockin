@@ -1,24 +1,18 @@
 package;
 
 import levels.*;
-// import levels.M1State;
-// import levels.M2State;
-// import levels.M3State;
+import offices.*;
 import ui.Overlay;
 
 import flixel.FlxG;
 import flixel.FlxState;
-// import flixel.text.FlxText;
 import flixel.ui.FlxButton;
-// import flixel.util.FlxAxes;
 import flixel.util.FlxSave;
 import flixel.addons.ui.FlxInputText;
 import flixel.FlxSprite;
 
 class MenuState extends FlxState
 {
-	// private var _txtTitle:FlxText;
-	// private var _btnPlay:FlxButton;
 	private var _gameSave:FlxSave;
 	private var _modalUp:Bool = false;
 
@@ -40,10 +34,6 @@ class MenuState extends FlxState
 
 		FlxG.cameras.bgColor = 0xff202030;
 		drawBackground();
-		// var txtTitle = new FlxText(0, 100, 0, "Clock-In", 22);
-		// txtTitle.alignment = CENTER;
-		// txtTitle.screenCenter(FlxAxes.X);
-		// add(txtTitle);
 
 		_gameSave = new FlxSave();
 		_gameSave.bind("Save");
@@ -95,7 +85,6 @@ class MenuState extends FlxState
 		// 		FlxG.sound.music.pause();
 		// 	else {
 		// 		// FlxG.sound.playMusic("assets/music/beepsong.ogg");		
-		// 		Main.LOGGER.logActionWithNoLevel(LoggingActions.RESUME_MUSIC);
 		// 		FlxG.sound.music.resume();
 		// 	}
 		// });
@@ -104,7 +93,7 @@ class MenuState extends FlxState
 		var credits = new Overlay();
 		credits.setModal(400, 260);
 		credits.setModalText("A WIP game from University of Washington's 2018 Games Capstone\n\n\n" +
-		"Permission to be hosted by albinoblacksheep.com\n\n" + 
+		// "Permission to be hosted by albinoblacksheep.com\n\n" + 
 		"Johan How - Development, Analytics\n\n" +
 		"Sam Kesala - Development, Writing\n\n" +
 		"Zhu Li - Development, Art\n\n" +
@@ -155,7 +144,6 @@ class MenuState extends FlxState
 					nextState = Type.createInstance(Type.resolveClass(Reg.data().night), [0]);
 				_gameSave.close();
 				FlxG.autoPause = false;
-				Main.LOGGER.logActionWithNoLevel(LoggingActions.CLICK_START);
 				// Reg.currentLevel = 1;
 				FlxG.switchState(nextState);
 			});
@@ -235,16 +223,6 @@ class MenuState extends FlxState
 			// FlxG.sound.music.stop();
 			Reg.currentLevel = 8;
 			FlxG.switchState(new ShiftPuzzleState());	
-		// } else if (FlxG.keys.pressed.SHIFT && FlxG.keys.pressed.NINE) {
-		// 	FlxG.switchState(new M1State()); // don't actually try this
-		// } else if (FlxG.keys.pressed.ALT && FlxG.keys.pressed.NINE) {
-		// 	FlxG.switchState(new M2State()); // don't actually try this
-		// } else if (FlxG.keys.pressed.ALT && FlxG.keys.pressed.NINE && FlxG.keys.pressed.ZERO) {
-		// 	FlxG.switchState(new M3State()); // don't actually try this
-		// } else if (FlxG.keys.pressed.ALT && FlxG.keys.pressed.SEVEN) { 
-		// 	// FlxG.sound.music.stop();
-		// 	Reg.currentLevel = 7;
-		// 	FlxG.switchState(new D7StillState());	
 		} else if (FlxG.keys.pressed.SHIFT && FlxG.keys.pressed.NINE) {
 			Reg.currentLevel = 9;
 			FlxG.switchState(new RomanNumeralsState());
