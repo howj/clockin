@@ -1,7 +1,7 @@
 package;
 /*Registry class to store references to objects and global state*/
 import flixel.util.FlxSave;
-// import TbcState;
+import TbcState;
 
 typedef Level = { totalTime:Int, night:String, day:String, office:String, nightMsg:Array<String>, hint:Array<String>  };
 
@@ -100,6 +100,7 @@ class Reg
     public static var ShiftTime:Int = 180;
     public static var RomanNumeralsTime:Int = 240;
     public static var KeysTime:Int = 240;
+    public static var StacksTime:Int = 120;
 
     private static var levelStructure:Array<Level> = [
         // Menu
@@ -216,6 +217,19 @@ class Reg
             ],
             hint: ["The motto sounds like a metaphor. The \'light\' and \'darkness\' may both mean something on the clock",
                    "There are 3 key panels while I need 4 to set 06:35. The longer key on the left could mean something different."],
+        },
+         // Color Stacks puzzle
+        {   totalTime: Reg.StacksTime,
+            night: "levels.StacksPuzzleState",
+            day: "TbcState",
+            office: "",   
+            nightMsg: [
+                "New puzzle!"
+            ],
+            hint: [
+                "It looks like the 4 circular plates match what color of blocks that digit measures.",
+                "Each digit only counts one of the colors. I should move extra blocks aside wherever there's space."    
+                ],
         },
          // Next puzzle
         {   totalTime: 300,

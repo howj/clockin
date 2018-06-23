@@ -157,8 +157,8 @@ class MenuState extends FlxState
 
 		if (FlxG.keys.pressed.SHIFT && FlxG.keys.pressed.ONE) {
 			// FlxG.sound.music.stop();
-			Reg.currentLevel = 1;
-			FlxG.switchState(new N1State());
+			Reg.currentLevel = 11;
+			FlxG.switchState(new StacksPuzzleState());
 		} else if (FlxG.keys.pressed.SHIFT && FlxG.keys.pressed.TWO) {
 			// FlxG.sound.music.stop();
 			Reg.currentLevel = 2;
